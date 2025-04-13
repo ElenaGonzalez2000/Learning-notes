@@ -5,6 +5,7 @@ Este repositorio contiene mis apuntes de estudio mientras aprendo programación.
 ## 🧭 Índice
 
 - [JavaScript](./javascript/)
+- [C#](./C#/Propiedades_CSharp_Resumen.md)
 
 ---
 
