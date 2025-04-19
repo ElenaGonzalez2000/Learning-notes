@@ -15,7 +15,7 @@ Los arrays son estructuras que permiten almacenar múltiples valores en una sola
 ```javascript
 const array = [1,2,3,4,5,6];
 console.log(array);      // Muestra todo el array
-console.log(array[3]);  // Accede al tercer elemento (4), los array empiezan desde el 0
+console.log(array[3]);   // Accede al tercer elemento (4), los array empiezan desde el 0
 ```
 
 ### ✍🏻 Modificación de arrays
@@ -62,7 +62,7 @@ const celular = {
 
 ```javascript
 console.log(celular[mes de compra]);  // Para claves con espacios
-console.log(celular.marca);          // Notacion de punto
+console.log(celular.marca);           // Notacion de punto
 console.log(celular.contactos[1]);
 console.log(celular.memoria.marca)
 ```
