@@ -11,6 +11,7 @@ Son parte de mi proceso de aprendizaje como estudiante de programación de siste
 
 ### 🧱 Fundamentos
 
+- [Sintaxis basica](./fundamentos/sintaxis.md)
 - [Tipos de datos](./fundamentos/tipos-de-datos.md)
 - [Estructuras de control](./fundamentos/estructuras-de-control.md)
 - [Funciones](./fundamentos/funciones.md)
