@@ -1,0 +1,95 @@
+# ❓ Preguntas frecuentes sobre POO en C# (Dudas resueltas)
+
+Este documento complementa la guía de Programación Orientada a Objetos en C#, respondiendo dudas específicas que suelen surgir al estudiar herencia, polimorfismo, ocultamiento y referencias a objetos.
+
+---
+
+## 📌 ¿Qué pasa si uso `new` para redefinir una variable como `Vida` en la clase hija?
+
+Cuando usás `new`, **no estás sobreescribiendo** el miembro de la clase padre, sino **ocultándolo**. Eso significa que el valor accedido **dependerá del tipo de la referencia**, no del objeto real.
+
+```csharp
+public class Personaje
+{
+    public int Vida = 100;
+}
+
+public class Guerrero : Personaje
+{
+    public new int Vida = 150;
+}
+
+Personaje p = new Guerrero();
+Console.WriteLine(p.Vida); // Muestra 100 ⚠️
+
+Guerrero g = new Guerrero();
+Console.WriteLine(g.Vida); // Muestra 150 ✅
+```
+
+✔️ Si querés **polimorfismo verdadero**, usá `virtual` + `override`, y preferentemente trabajá con **propiedades**, no campos.
+
+---
+
+## 🔁 ¿Para qué sirve el modificador `new` si no reemplaza como `override`?
+
+Aunque `new` no genera polimorfismo, puede ser útil en estos casos:
+
+- Cuando el miembro del padre **no es `virtual`** y no podés modificarlo (por ejemplo, viene de una librería externa).
+- Cuando querés que el miembro se comporte diferente **solo en contextos donde se usa la clase hija directamente**.
+- Para dejar en claro que **estás ocultando intencionalmente** un miembro heredado.
+
+🔴 Pero **no es recomendable duplicar atributos con el mismo nombre** entre padre e hijo si podés evitarlo, ya que complica el mantenimiento y lectura del código.
+
+---
+
+## 🧠 ¿Qué cambia si referencio a la clase padre en vez de la hija?
+
+Cuando usás una **referencia del tipo padre**, sólo podés acceder a lo que la clase padre "conoce". Si el método es `virtual` y fue `override`, entonces se ejecuta la versión más específica (polimorfismo).
+
+```csharp
+Personaje p = new Mago();
+p.Habilidad(); // ✅ Ejecuta el override de Mago
+
+// Pero esto no se puede:
+p.LanzarHechizo(); // ❌ Error: Personaje no tiene ese método
+```
+
+Para acceder a los métodos propios de `Mago`, necesitás una referencia del tipo `Mago`, o usar *casting*:
+
+```csharp
+if (p is Mago magoReal)
+{
+    magoReal.LanzarHechizo();
+}
+```
+
+---
+
+## ✅ ¿Entonces siempre es mejor referenciar a la clase hija?
+
+No necesariamente. Depende del objetivo:
+
+| Objetivo                                     | Tipo de referencia recomendado |
+|----------------------------------------------|-------------------------------|
+| Usar métodos propios del hijo                | Clase hija                    |
+| Tratar todos los objetos de forma genérica   | Clase padre                   |
+| Aplicar polimorfismo (`override`)            | Clase padre                   |
+| Acceder a métodos override + propios del hijo| Clase padre + casting         |
+
+📌 Usar referencias al padre permite escribir código más genérico y escalable, mientras que la referencia al hijo da acceso completo al objeto.
+
+---
+
+## 🔍 ¿Qué diferencia hay entre `virtual`, `override`, `abstract` y `new`?
+
+| Modificador   | ¿Dónde se usa?      | ¿Permite polimorfismo? | ¿Tiene implementación? | ¿Obliga a sobrescribir? | Notas clave |
+|---------------|----------------------|--------------------------|--------------------------|---------------------------|-------------|
+| `virtual`     | Clase padre           | ✅ Sí                    | ✅ Sí                    | ❌ No                    | Permite `override` opcional en hijos |
+| `override`    | Clase hija            | ✅ Sí                    | ✅ Sí                    | 🔁 Depende del padre     | Se usa si el padre tiene `virtual` o `abstract` |
+| `abstract`    | Clase padre (abstract)| ✅ Sí                    | ❌ No                    | ✅ Sí                    | El hijo debe implementar sí o sí |
+| `new`         | Clase hija            | ❌ No                    | ✅ Sí                    | ❌ No                    | Oculta miembro, no lo reemplaza |
+
+---
+
+📚 Este archivo está pensado como una hoja de referencia rápida. Ideal para repasar antes de una práctica, parcial o proyecto real con POO en C#.
+
