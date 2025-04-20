@@ -63,7 +63,7 @@ Un constructor es un método especial que se ejecuta automaticamente al crear un
 ```csharp
 class Persona {
     public string Nombre;
-    public int Edad;
+    publix int Edad;
 
     // Constructor con parametros
     puclic Persona(string nombre, int edad){
