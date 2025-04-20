@@ -6,7 +6,7 @@ En esa seccion veremos como crear clases, objetos y como funcionan los construct
 
 ## 1. Clases y Objetos
 
-En PO, una clase es como un plano o molde que define:
+En POO, una clase es como un plano o molde que define:
 
 - 🔶 Que propiedad tiene un objeto (atributos).
 - 🔷 Que comportamientos puede realizar (metodos).
