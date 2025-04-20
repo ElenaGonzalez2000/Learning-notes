@@ -1,18 +1,18 @@
-# Node.js 🖥️
+# 🖥️ Node.js
 
-## ¿Qué es Node.js?
+## 🤔 ¿Qué es Node.js?
 
 **Node.js** Es un entorno de ejecucion para JavaScript construido con el motor V8 de Chrome.
 Permite ejecutar código JavaScript fuera del navegador, especialmente en servidores o aplicaciones de escritorio.
 
-## ¿Para qué sirve?
+## 📌 ¿Para qué sirve?
 
 - Crear servidores web y APIs.
 - Desarrollar aplicaciones de tiepo real (como chats o juegos).
 - Automatizar tareas y scripts.
 - Crear herramientas de línea de comandos (CLI).
 
-## ¿Comó instalar Node.js?
+## 📥 ¿Comó instalar Node.js?
 
 1. Entra en la página oficial: <https://nodejs.org/>
 2. Descarga la versión recomendada (LTS) para tu sistema operativo.
@@ -20,7 +20,7 @@ Permite ejecutar código JavaScript fuera del navegador, especialmente en servid
 
 > Al instalar Node.js tambien se instala **npm** (Node Package Manager), que sirve para gestionar paquetes y dependencias.
 
-## Verificar la instalación
+## ✅ Verificar la instalación
 
 Abre una terminal y escribe:
 
@@ -36,7 +36,7 @@ Y para `npm`:
 npm -v
 ```
 
-## Usar Node.js por primera vez
+## 🔰 Usar Node.js por primera vez
 
 - **Crea un archivo JavaScript:**
 Por ejemplo, `app.js`:
@@ -51,7 +51,7 @@ console.log('Hola desde Node.js!')
 node app.js
 ```
 
-## Comandos basicos
+## 👩‍💻 Comandos basicos
 
 - Iniciar un nuevo proyecto:
 
