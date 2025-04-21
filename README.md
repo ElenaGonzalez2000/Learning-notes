@@ -3,7 +3,7 @@
 ¡Hola! 👋 Soy Elena y este repositorio es mi cuaderno digital de estudio.  
 Aquí organizo mis apuntes sobre los lenguajes, herramientas y tecnologías que voy aprendiendo a lo largo de mi carrera como estudiante de programación de sistemas 💻📚
 
-Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaciones con mis palabras para ayudarme a repasar, practicar y crecer en este camino. 
+Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaciones con mis palabras para ayudarme a repasar, practicar y crecer en este camino.
 
 ---
 
@@ -55,10 +55,10 @@ Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaci
 
 ### 🛠️ Herramientas y Ecosistema Dev
 
-- 🐙 Git *(próximamente)*  
+- 🐙 [Git](./Git/README.md)  
   Comandos útiles, flujos de trabajo, ramas, merge y resolución de conflictos.
 
-- 🌐 Node.js *(próximamente)*  
+- 🌐 [Node.JS](./NodeJS/README.md)  
   Notas sobre el entorno de ejecución JS, npm, módulos y scripts.
 
 - 🌐 WordPress *(próximamente)*  
@@ -75,17 +75,15 @@ Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaci
   Diagramas ER, normalización y claves foráneas. Apuntes prácticos para aplicar en proyectos.
 
 ---
-
+<!-- Pensado para mas adelante
 ### 🧪 Proyectos personales
 
 Pequeños proyectos donde pongo en práctica lo que voy aprendiendo:
 
 - 🎵 Reproductor musical vintage *(Node + JS)*  
-- 🛍️ Tienda web responsive *(HTML, CSS y JS)*  
-- 📅 Sistema de turnos médicos *(Java, POO)*  
 - 🌐 Portfolio web *(React + Netlify)*  
 
----
+--- -->
 
 ### 🎓 Proyectos académicos
 
@@ -109,7 +107,6 @@ Pequeños proyectos donde pongo en práctica lo que voy aprendiendo:
 - 🧼 Principios de código limpio *(futuro)*
 - 🧩 SOLID y buenas prácticas *(futuro)*
 - 🚀 Metodologías ágiles (Scrum, Kanban) *(futuro)*
-- 🔐 Seguridad básica en desarrollo web *(futuro)*
 
 ---
 
@@ -117,10 +114,9 @@ Pequeños proyectos donde pongo en práctica lo que voy aprendiendo:
 
 Herramientas que uso o estoy empezando a incorporar:
 
-- Visual Studio Code, GitHub, Figma  
+- Visual Studio Code, Visual Studio 2022, GitHub, Figma  
 - Node.js, React, Sass, Tailwind, MySQL  
 - Netlify, Vite, WordPress *(explorando)*  
-- Siempre con mate y buena música ☕🎧
 
 ---
 
