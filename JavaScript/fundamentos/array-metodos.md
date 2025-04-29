@@ -188,6 +188,7 @@ console.log(eliminadas); // ['banana', 'cereza']
 ```
 
 #### 📌 Mas detalles del funcionamiento del metodo splice
+
 `array.splice(inicio, cantidad, elemento1, elemento2)`
 
 | Parametro | ¿Que significa? |
@@ -210,3 +211,99 @@ console.log(frutas); // ['manzana', 'banana', 'cereza', 'durazno']
 
 - Al poner '0' no eliminamos nada, solo agregamos elementos en la posición indicada
 
+---
+
+### `slice()`
+
+Copia una parte del array en un nuevo array.
+
+```js
+const numeros = [1, 2, 3, 4, 5];
+const copia = numeros.slice(1, 3);
+console.log(copia);  // [2, 3]
+```
+
+`En la copia se incluye el indice inicial (elemento en la posición 1), pero el segundo parametro es opcional, osea que si no lo colocamos copiara el array hasta el final y en caso de ponerlo este se excluye de la copia, por eso solo obtuvimos los elementos 2 y 3`
+
+---
+
+## 🧩 Otros metodos
+
+### 🔹 `includes()`
+
+¿El array contiene un elemento?
+
+```js
+const numeros = [1, 2, 3]
+console.log(numero.includes(2));  // true
+```
+
+---
+
+### 🔹 `indexOf()`
+
+Devuelve el indice de un elemento
+
+```js
+const numeros = [1, 2, 3];
+console.log(numeros.indexOf(2));  // 1
+```
+
+---
+
+### 🔹 `join()`
+
+Convierte el array en un string.
+
+```js
+const palabras = ["hola", "mundo"]
+console.log(palabras.join(" "));  // hola mundo
+```
+
+`entre los parentesis debemos colocar lo que queremos que separe los elementos`
+
+---
+
+### 🔹 `concat()`
+
+Une dos arrays.
+
+```js
+const a = [1, 2];
+const b = [3, 4];
+const combinado = a.concat(b);
+console.log(combinado)  // [1, 2, 3, 4]
+```
+
+---
+
+### 🔹 `flat()`
+
+Aplana arrays anidados.
+
+```js
+const matriz = [1, [2, [3]]];
+console.log(matriz.flat(2));  // [1, 2, 3]
+```
+
+---
+
+## 📌 Notas importantes
+
+- No modifican el original: `map`, `filter`, `slice`, `concat`, `flat`.
+
+- Sí modifican el original: `sort`, `reverse`, `splice`, `push`, `pop`, `shift`, `unshift`.
+
+- 🔥 Siempre que trabajes en proyectos realies **evita modificar arrays directamente** a menos que realmente sea necesario.
+
+---
+
+## 🎆 Algunos metodos relativamente nuevos
+
+| Metodo | Explicacion breve |
+|--------|-------------------|
+| `findLast()` | Devuelve el ultimo elemento que cumpla una condicion. |
+| `findLastIndex()` | Devuelve el indice del ultimo elemento que cumpla una condicion |
+| `toSorted()` | Devuelve una copia ordenada del array (no modifica el original). |
+| `toReversed()` | Devuelve una copia invertida (sin tocar el original). |
+| `toSpliced()` | Variante de `splice` que no modifica el array original |
