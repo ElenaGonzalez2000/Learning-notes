@@ -33,11 +33,11 @@ let MiVariable = 10; //Son distintas
 ## 📦 Tipos de datos básicos
 
 ```javascript
-let numeros = 10;           // Number
-let texto = "Hola mundo";  // String
-let booleano = true;      // Boolean
-let indefenido;          // undefined 
-let nulo = null;        // null
+let numeros = 10; // Number
+let texto = "Hola mundo"; // String
+let booleano = true; // Boolean
+let indefenido; // undefined
+let nulo = null; // null
 ```
 
 ---
@@ -57,15 +57,15 @@ let x = 5;
 x += 2; //equivale a: x = x + 2
 
 // Comparación
-5 == "5";     // true (compara valor, no tipo)
-5 === "5";   // false (compara valor y tipo)
-5 != 4;     // true
+5 == "5"; // true (compara valor, no tipo)
+5 === "5"; // false (compara valor y tipo)
+5 != 4; // true
 5 !== "5"; // true
 
 // Logicos
-true && false;  // false 
+true && false; // false
 true || false; // true
-!true;        // false
+!true; // false
 ```
 
 ---
@@ -74,7 +74,7 @@ true || false; // true
 
 ```javascript
 let nombre = "Elena";
-let saludo = `Hola, mi nombre es ${nombre}`
+let saludo = `Hola, mi nombre es ${nombre}`;
 console.log(saludo); // Hola, mi nombre es Elena
 ```
 
@@ -84,7 +84,7 @@ console.log(saludo); // Hola, mi nombre es Elena
 
 ```javascript
 // Mostrar mensajes
-console.log("Hola desde la consola")
+console.log("Hola desde la consola");
 
 // Entrada (en el navegador)
 let nombre = prompt("¿Como te llamas?");
@@ -118,9 +118,9 @@ console.log(a);
 
 ```javascript
 const celular = {
-    color: 'negro',
-    'marca actual': 'Samsung'
-}
+  color: "negro",
+  "marca actual": "Samsung",
+};
 ```
 
 ---
@@ -130,7 +130,7 @@ const celular = {
 - Se usa para acceder a las propiedades de un objeto si el nombre de la propiedad es valido como identificador(sin espacion, simbolos, etc).
 
 ```javascript
-console.log(celular.color); // 'negro'
+console.log(celular.color); // "negro"
 ```
 
 ---
@@ -144,8 +144,8 @@ console.log(celular.color); // 'negro'
   - Acceder a propiedades de objetos con nombres complejos (como strings con espacios)
 
 ```javascript
-const colores = ["rojo", "verde", "azul"]
-console.log(colores[0]);   // "rojo"
+const colores = ["rojo", "verde", "azul"];
+console.log(colores[0]); // "rojo"
 
 concole.log(celular["marca actual"]); // "Samsung"
 ```
@@ -177,11 +177,11 @@ console.log(saludar("Elena")); // Hola, Elena
 
 ```javascript
 const persona = {
-    nombre: 'Elena',
-    edad: 24
-}
+  nombre: "Elena",
+  edad: 24,
+};
 
-if(persona.edad >= 18) {
-    console.log("Es mayor de edad")
+if (persona.edad >= 18) {
+  console.log("Es mayor de edad");
 }
 ```

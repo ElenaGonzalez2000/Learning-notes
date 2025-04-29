@@ -39,10 +39,10 @@ npm -v
 ## 🔰 Usar Node.js por primera vez
 
 - **Crea un archivo JavaScript:**
-Por ejemplo, `app.js`:
+  Por ejemplo, `app.js`:
 
 ```javascript
-console.log('Hola desde Node.js!')
+console.log("Hola desde Node.js!");
 ```
 
 - **Ejecutarlo en la terminal:**

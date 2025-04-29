@@ -6,16 +6,16 @@ Java es un lenguaje fuertemente tipado y estatico, lo que significa que cada var
 
 Java tiene 8 tipo primitivos:
 
-|Tipo     |Tamaño   |Ejemplo            |
-|---------|---------|-------------------|
-|`byte`   |8 bit    |`byte b = 100;`    |
-|`short`  |16 bit   |`short  s = 30000;`|
-|`int`    |32 bit   |`int n = 100000;`  |
-|`long`   |64 bit   |`long l = 10000000000L`|
-|`float`  |32 bit   |`float f = 5.6f;`  |
-|`double` |64 bit   |`double d = 5.6;`  |
-|`char`   |16 bit   |`char c = 'a';`    |
-|`boolean`|1 bit    |`boolean flag = true;`|
+| Tipo      | Tamaño | Ejemplo                 |
+| --------- | ------ | ----------------------- |
+| `byte`    | 8 bit  | `byte b = 100;`         |
+| `short`   | 16 bit | `short  s = 30000;`     |
+| `int`     | 32 bit | `int n = 100000;`       |
+| `long`    | 64 bit | `long l = 10000000000L` |
+| `float`   | 32 bit | `float f = 5.6f;`       |
+| `double`  | 64 bit | `double d = 5.6;`       |
+| `char`    | 16 bit | `char c = "a";`         |
+| `boolean` | 1 bit  | `boolean flag = true;`  |
 
 ---
 

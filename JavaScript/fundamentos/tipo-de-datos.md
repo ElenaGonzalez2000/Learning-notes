@@ -58,7 +58,7 @@ Se almacenan por referencia. Incluyen:
 - **Objet**: coleccion de pares clave-valor.
 
 ```js
-const persona = { nombre: 'Elena', edad: 24};
+const persona = { nombre: "Elena", edad: 24 };
 ```
 
 - **Array**: estructura de datos indexada.
@@ -80,8 +80,8 @@ function saludar () = {
 ## 📌 Verificacion de tipos
 
 ```js
-typeof "Hola"         // string
-typeof 10             // number
-typeof true           // boolean
-typeof undefined      // undefined
+typeof "Hola"; // string
+typeof 10; // number
+typeof true; // boolean
+typeof undefined; // undefined
 ```

@@ -4,17 +4,17 @@ C# es un lenguaje fuertemente tipado y estatico. Cada variable debe declarar su 
 
 ## 🧱 Tipos de Datos Primitivos (Tipos por Valor)
 
-|Tipo    | Tamaño | Ejemplo|
-|-----   |--------|--------|
-|byte    | 8 bit  | byte b = 255;|
-|short   | 16 bit | short s = 32767;|
-|int     | 32 bit | int i = 1000;|
-|long    | 64 bit | long l = 123456789L;|
-|float   | 32 bit | float f = 3.14f;|
-|double  | 64 bit | double d = 3.1415;|
-|decimal | 128 bit| decimal m = 1000.5m; (más preciso para finanzas)|
-|char    | 16 bit | char c = 'A';|
-|bool    | 1 bit  | bool activo = true;|
+| Tipo    | Tamaño  | Ejemplo                                          |
+| ------- | ------- | ------------------------------------------------ |
+| byte    | 8 bit   | byte b = 255;                                    |
+| short   | 16 bit  | short s = 32767;                                 |
+| int     | 32 bit  | int i = 1000;                                    |
+| long    | 64 bit  | long l = 123456789L;                             |
+| float   | 32 bit  | float f = 3.14f;                                 |
+| double  | 64 bit  | double d = 3.1415;                               |
+| decimal | 128 bit | decimal m = 1000.5m; (más preciso para finanzas) |
+| char    | 16 bit  | char c = "A";                                    |
+| bool    | 1 bit   | bool activo = true;                              |
 
 ---
 
