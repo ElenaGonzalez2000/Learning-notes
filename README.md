@@ -68,7 +68,7 @@ Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaci
 
 ### 🗃️ Bases de Datos
 
-- 🐬 MySQL *(próximamente)*  
+- 🐬 Bases de Datos con MySQL *(próximamente)*  
   Fundamentos, DDL, DML, consultas básicas y avanzadas, joins y subconsultas.
 
 - 🧩 Modelado de datos *(próximamente)*  

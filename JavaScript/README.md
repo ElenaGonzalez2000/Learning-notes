@@ -20,6 +20,7 @@ Son parte de mi proceso de aprendizaje como estudiante de programación de siste
 - [Strings](./fundamentos/strings.md)
 - [Números](./fundamentos/numeros.md)
 - [Bucles](./fundamentos/bucles.md)
+- [Metodos de Arrays](./fundamentos/array-metodos.md)
 
 ### 🧠 Programación Orientada a Objetos (POO)
 

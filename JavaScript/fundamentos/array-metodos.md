@@ -62,7 +62,7 @@ console.log(numeros.some(num => num > 2));  // true
 
 ---
 
-### `every()`
+### 🔹 `every()`
 
 Devuelve `true` si **todos** los elementos cumplen la condición.
 
@@ -213,7 +213,7 @@ console.log(frutas); // ['manzana', 'banana', 'cereza', 'durazno']
 
 ---
 
-### `slice()`
+### 🔹 `slice()`
 
 Copia una parte del array en un nuevo array.
 
