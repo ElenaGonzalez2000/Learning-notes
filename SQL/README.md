@@ -11,3 +11,17 @@ Estan organizados para acompañar mi formación en programacion de sistemas, con
 Incluye conceptos de diseño, normalización, modelado relacional y ejemplos con MySQL.
 
 ---
+
+## 📚 índice de contenido
+
+- [Fundamentos](./1_fundamentos.md)
+- [Modelo Entidad - Relación](./2_modelado-entidad-relacion.md)
+- [Modelo relacional](./3_modelo%20relacional.md)
+- [Normalización](./4_normalizacion.md)
+
+---
+
+## 📌 Futuras secciones
+
+- `NoSQL vs SQL` → Comparativa entre bases de datos relaciones y no relacionales.
+- `Introdución NoSQL`→ MondoDB: estructura, colecciones y consultas basicas.
