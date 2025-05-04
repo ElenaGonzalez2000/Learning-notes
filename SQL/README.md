@@ -18,6 +18,8 @@ Incluye conceptos de diseño, normalización, modelado relacional y ejemplos con
 - [Modelo Entidad - Relación](./2_modelado-entidad-relacion.md)
 - [Modelo relacional](./3_modelo%20relacional.md)
 - [Normalización](./4_normalizacion.md)
+  
+- [Índices](./indices.md)
 
 ---
 
