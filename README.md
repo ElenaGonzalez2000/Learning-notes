@@ -82,6 +82,7 @@ Pequeños proyectos donde pongo en práctica lo que voy aprendiendo:
 
 - 🎵 Reproductor musical vintage *(Node + JS)*  
 - 🌐 Portfolio web *(React + Netlify)*  
+- Extencion de Youtube - Cambiar color de tema
 
 --- -->
 
