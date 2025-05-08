@@ -107,6 +107,35 @@ Una **función** en MySQL devuelve un único valor, y se puede usar dentro de un
 - Debe incluir `RETURNS` para indicar el tipo de dato de salida.
 - Se necesita declarar al menos una característica: `DETERMINISTIC`, `NO SQL`, `READS SQL DATA`.
 
+#### `DETERMINISTIC`
+
+Devuelve siempre el mismo resultado con los mismos parámetros.
+Usar si: no hay consultas ni funciones como `NOW()`.
+
+#### `NOT DETERMINISTIC`
+
+Devuelve diferentes resultados con mismos parámetros.
+Usar si: hay SELECTs, `RAND()`, `NOW()` o datos que cambian.
+
+#### `NO SQL`
+
+No se usa SQL en la función. Solo lógica pura.
+Ideal para cálculos simples.
+
+#### `READS SQL DATA`
+
+Lee datos con SELECT pero no modifica.
+Común en funciones que consultan datos.
+
+#### `MODIFIES SQL DATA`
+
+Modifica datos con `INSERT`, `UPDATE`, `DELETE`.
+No se recomienda salvo casos específicos.
+
+#### `CONTAINS SQL`
+
+Contiene SQL pero no accede a tablas directamente.
+
 ```sql
 DELIMITER $$
 CREATE FUNCTION contar_productos(tipo VARCHAR(50))
@@ -168,7 +197,16 @@ END WHILE;
 
 Un **trigger** es un bloque de código que se ejecuta automáticamente cuando ocurre un evento sobre una tabla (`INSERT`, `UPDATE` o `DELETE`).
 
-No es posible modificar la **misma tabla** que dispara el trigger dentro del propio trigger.
+### 📌 Reglas clave
+
+- Se definen como `BEFORE` o `AFTER`.
+- Usan `NEW` (datos nuevos) o `OLD` (datos previos).
+- No se puede modificar la misma tabla que activa el trigger.
+
+### 📌 `NEW` y `OLD`
+
+- `NEW.columna`: valor nuevo (para `INSERT` y `UPDATE`)
+- `OLD.columna`: valor anterior (para `UPDATE` y `DELETE`)
 
 ```sql
 CREATE TRIGGER validar_nota
@@ -180,11 +218,6 @@ BEGIN
   END IF;
 END;
 ```
-
-### 📌 `NEW` y `OLD`
-
-- `NEW.columna`: valor nuevo (para `INSERT` y `UPDATE`)
-- `OLD.columna`: valor anterior (para `UPDATE` y `DELETE`)
 
 ---
 
@@ -241,31 +274,32 @@ SHOW CREATE VIEW resumen_productos;
 
 ### 🔁 Stored Procedures
 
-✔️ Encapsulan lógica compleja
-✔️ Mejoran el rendimiento
-✔️ Reducen el tráfico entre cliente y servidor
-❌ Difíciles de testear o debuggear
+✔️ Encapsulan lógica compleja  
+✔️ Mejoran el rendimiento  
+✔️ Reducen el tráfico entre cliente y servidor  
+❌ Difíciles de testear o debuggear  
 ❌ El mantenimiento puede ser costoso
 
 ### ⛓️ Triggers
 
-✔️ Automatizan tareas
-✔️ Garantizan reglas de negocio
-❌ Ocultan lógica (pueden sorprender)
+✔️ Automatizan tareas  
+✔️ Garantizan reglas  
+✔️ Utiles para auditoria  
+❌ Ocultan lógica (si no se documentan)  
 ❌ Afectan rendimiento si se abusa
 
 ### 🧠 Funciones
 
-✔️ Reutilizables dentro de consultas
-✔️ Ayudan a simplificar queries
-❌ Menor flexibilidad que los procedimientos
+✔️ Reutilizables dentro de consultas  
+✔️ Ayudan a simplificar queries  
+❌ Menor flexibilidad que los procedimientos  
 ❌ Solo devuelven un valor
 
-### 👁️‍🗨️ Vistas
+### 👁️ Vistas
 
-✔️ Ocultan la complejidad
-✔️ Restringen acceso a columnas sensibles
-❌ Pueden afectar el rendimiento
+✔️ Ocultan la complejidad  
+✔️ Restringen acceso a columnas sensibles  
+❌ Pueden afectar el rendimiento  
 ❌ No permiten lógica condicional
 
 ---
@@ -276,7 +310,3 @@ SHOW CREATE VIEW resumen_productos;
 - 🧠 **Función**: cuando necesitás calcular o devolver un único valor dentro de una consulta.
 - ⛓️ **Trigger**: cuando quieras que una acción se realice automáticamente ante eventos.
 - 👁️‍🗨️ **Vista**: cuando necesitás simplificar el acceso a datos complejos o proteger parte de la estructura de la base.
-
----
-
-¿Querés que armemos una segunda parte con ejercicios prácticos de cada objeto para poner en práctica lo aprendido?
