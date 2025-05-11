@@ -7,8 +7,7 @@ En esta unidad se trabaja el paradigma de Programación Orientada a Objetos (POO
 ## 📌 Contenidos principales
 
 - [x] Clases y objetos
-- [x] Atributos, métodos y constructores
-- [x] Getters y Setters
+- [x] Métodos, constructores, getters y setters
 - [x] Métodos estáticos y de instancia
 - [x] Sobrecarga y sobreescritura
 - [x] Encapsulamiento, composición y delegación
