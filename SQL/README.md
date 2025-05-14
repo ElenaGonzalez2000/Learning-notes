@@ -20,6 +20,7 @@ Incluye conceptos de diseño, normalización, modelado relacional y ejemplos con
 - [Normalización](./4_normalizacion.md)
   
 - [Índices](./indices.md)
+- [Objetos de desarrollo en MySQL con T-SQL](./Desarrollo_con_T-Sql.md)
 
 ---
 

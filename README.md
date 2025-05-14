@@ -11,13 +11,13 @@ Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaci
 
 ### 💬 Lenguajes de Programación
 
-- 🔹 [JavaScript](./javascript/README.md)  
+- 🔹 [JavaScript](./JavaScript/README.md)  
   Mis primeras bases en la programación: incluye fundamentos, DOM, asincronismo, POO, módulos y más.
 
-- 🔸 [C#](./csharp/README.md)  
+- 🔸 [C#](./Csharp/README.md)  
   Lenguaje que estoy aprendiendo en la universidad. Clases, herencia, LINQ, colecciones, archivos y estructuras avanzadas.
 
-- ☕ Java *(próximamente)*  
+- ☕ [Java](./Programación%20II%20-%20JAVA/README.md)
   Para reforzar POO, estructuras y conceptos sólidos del lenguaje.
 
 - 🐍 Python *(próximamente)*  
@@ -68,11 +68,11 @@ Cada carpeta contiene notas propias, resúmenes, ejemplos de código y explicaci
 
 ### 🗃️ Bases de Datos
 
-- 🐬 Bases de Datos con MySQL *(próximamente)*  
+- 🐬 [Bases de Datos con MySQL](./SQL/README.md)
   Fundamentos, DDL, DML, consultas básicas y avanzadas, joins y subconsultas.
 
-- 🧩 Modelado de datos *(próximamente)*  
-  Diagramas ER, normalización y claves foráneas. Apuntes prácticos para aplicar en proyectos.
+<!-- - 🧩 Modelado de datos *(próximamente)*  
+  Diagramas ER, normalización y claves foráneas. Apuntes prácticos para aplicar en proyectos. -->
 
 ---
 <!-- Pensado para mas adelante
@@ -82,7 +82,7 @@ Pequeños proyectos donde pongo en práctica lo que voy aprendiendo:
 
 - 🎵 Reproductor musical vintage *(Node + JS)*  
 - 🌐 Portfolio web *(React + Netlify)*  
-- Extencion de Youtube - Cambiar color de tema
+- 🎨 Extencion de Youtube - Cambiar color de tema
 
 --- -->
 
